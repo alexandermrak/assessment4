@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block content %}
+<hr>
+    <form  class="pure-form" action="" method="POST">
+        <table>
+            {% csrf_token %}
+            {{ form.as_p }}
+        </table>
+        <input type="submit" value="Add Item" class="pure-button">
+    </form>
+{% endblock %}
